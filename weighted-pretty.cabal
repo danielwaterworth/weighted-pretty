@@ -1,0 +1,29 @@
+name:                weighted-pretty
+version:             0.1.0.0
+synopsis:            Introspectable pretty printers
+description:         Please see README.md
+homepage:            https://github.com/danielwaterworth/pretty-text#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Daniel Waterworth
+maintainer:          da.waterworth@gmali.com
+copyright:           2016 Daniel Waterworth
+category:            Text
+build-type:          Simple
+-- extra-source-files:
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Data.Text.WeightedPretty
+  build-depends:       base >= 4.7 && < 5
+                     , text
+                     , mtl
+                     , transformers
+                     , lens
+                     , monad-dijkstra
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/danielwaterworth/pretty-text

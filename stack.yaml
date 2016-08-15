@@ -1,0 +1,7 @@
+flags: {}
+extra-package-dbs: []
+packages:
+- '.'
+extra-deps:
+- monad-dijkstra-0.1.0.0
+resolver: lts-6.11
